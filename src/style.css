@@ -1,0 +1,202 @@
+/* Ensure html and body fill the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex; /* Align sidebar and main content horizontally */
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: RGB(64, 60, 60);
+    font-size: 20px;
+    width: 150px; /* Fixed width for sidebar */
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Sidebar link container */
+.side-bar-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make it take full height of sidebar */
+}
+
+/* Sidebar button styles */
+.sidebar-task-btn {
+    background: none;
+    border: none;
+    gap: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    margin-left: 5px;
+}
+
+/* Sidebar links */
+.sidebar-task {
+    color: white;
+    text-decoration: none;
+}
+
+/* Position the #back button at the bottom */
+#back {
+    margin-top: auto; /* Pushes the button to the bottom */
+    margin-left: 5px; /* Adjusted to align with other buttons */
+    margin-bottom: 20px;
+}
+
+#projects {
+    margin-top: 40px;
+}
+
+/* Main content area styles */
+.main-content {
+    flex: 1; /* Take up the remaining width */
+    padding: 20px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-left: 750px;
+}
+
+/* Task input area styles */
+.task-input-area {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 55px;
+}
+
+#back{
+    margin-left: 100px;
+}
+
+.add-class{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: rgb(206, 198, 198);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.add{
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(116, 111, 111);
+    color: white;
+}
+
+.input {
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px; /* Optional: Adds padding inside the input field */
+    font-size: 16px; /* Optional: Adjust font size of input text */
+    text-align: center; /* Centers the text and placeholder text horizontally */
+    margin-top: 10px;
+}
+
+.input::placeholder {
+    font-size: 18px; /* Adjust the font size of the placeholder text */
+    color: #888; /* Optional: Change the color of the placeholder text */
+    text-align: center; /* Center the placeholder text horizontally */
+}
+
+.priorities{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.priority{
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: none;
+    margin-left: 20px;
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.date-picker {
+    background-color: rgb(116, 111, 111);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.date-picker i {
+    font-size: 18px;
+}
+
+.date-input {
+    margin-left: 10px;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+}
+
+.xButton{
+    margin-left: 350px;
+}

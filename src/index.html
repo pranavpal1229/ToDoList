@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="side-bar-link">
+            <button class="sidebar-task-btn">
+                <i class="fa-solid fa-plus"></i> 
+                <span class="sidebar-task">Add Task</span>
+            </button>
+            
+            <button class="sidebar-task-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="sidebar-task">Search</span>
+            </button>
+
+            <button class="sidebar-task-btn">
+                <i class="fa-regular fa-star" style="color: #ffffff;"></i>
+                <span class="sidebar-task">Today</span>
+            </button>
+
+            <button class="sidebar-task-btn">
+                <i class="fa-regular fa-calendar" style="color: #fafafa;"></i>
+                <span class="sidebar-task">Upcoming</span>
+            </button>
+
+            <button class="sidebar-task-btn" id="projects">
+                <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
+                <span class="sidebar-task">Projects</span>
+                <i class="fa-solid fa-plus fa-xs" style="margin-top: 3px;"></i>
+            </button>
+
+            <button id="back" class="sidebar-task-btn">
+                <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main content area for adding tasks -->
+    <div class="main-content">
+        <h1 class="add-task">Add a New Task</h1>
+        <div class="task-input-area">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <div id="task-list">
+            <!-- Task items will appear here -->
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/05db80e85c.js" crossorigin="anonymous"></script>
+</body>
+</html>
